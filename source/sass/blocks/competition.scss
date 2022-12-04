@@ -1,0 +1,248 @@
+.competition__wrapper {
+  display: flex;
+  width: 1160px;
+  margin: 0 auto;
+  padding-bottom: 106px;
+
+  @media (min-width: $desktop-min) and (max-width: $desktop-max) {
+    max-width: 1160px;
+    width: 95%;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 678px;
+    padding-bottom: 100px;
+  }
+
+  @media (max-width: $mobile-width) {
+    display: block;
+    width: 91%;
+    padding-top: 2px;
+    padding-bottom: 64px;
+  }
+}
+
+.competition__description {
+  width: 500px;
+  background: #ed0233;
+  padding: 87px 78px;
+
+  @media (min-width: $desktop-min) and (max-width: $desktop-max) {
+    max-width: 500px;
+    width: 42%;
+  }
+
+  @media (max-width: $tablet-width) {
+    max-width: 292px;
+    padding: 51px 44px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    max-width: inherit;
+  }
+}
+
+.competition__image img {
+  width: 660px;
+  min-height: 500px;
+  object-fit: cover;
+  height: 100%;
+
+  @media (max-width: $tablet-width) {
+    width: 386px;
+    min-height: 292px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+  }
+}
+
+.competition__list {
+  margin: -4px 0 0 0;
+
+  @media (max-width: $tablet-width) {
+    margin: -2px 0 0 17px;
+  }
+}
+
+.competition__description h2 {
+  font-family: $ff-alumni-sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 82px;
+  line-height: 79px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  margin: 0 0 0 13px;
+  text-transform: uppercase;
+
+  @media (max-width: $tablet-width) {
+    font-size: 48px;
+    line-height: 46px;
+    margin: 0 0 0 9px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin: 0 0 0 8px;
+  }
+}
+
+.competition__term {
+  font-family: $ff-roboto-condensed;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #ffffff;
+  padding-bottom: 5px;
+
+  &--time {
+    margin-top: 7px;
+  }
+
+  @media (max-width: $tablet-width) {
+    font-size: 12px;
+    line-height: 18px;
+    border-bottom: 1px solid #ffffff;
+    width: 40px;
+    padding-bottom: 1px;
+
+    &--time {
+      border-bottom: none;
+      margin-right: 17px;
+    }
+  }
+}
+
+.competition__detail-reduce-text {
+  font-family: $ff-roboto-condensed;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+  align-self: center;
+  width: 40px;
+
+  @media (max-width: $tablet-width) {
+    font-size: 10px;
+    line-height: 13px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-top: 1px;
+  }
+}
+
+.competition__container {
+  display: flex;
+
+  @media (max-width: $mobile-width) {
+    justify-content: space-between;
+  }
+}
+
+.competition__detail {
+  font-family: $ff-roboto-condensed;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+  color: #ffffff;
+  margin: 0;
+  border-top: 1px solid #ffffff;
+  display: flex;
+
+  &--data {
+    width: 55px;
+    justify-content: space-between;
+    margin-bottom: 19px;
+    gap: 5px;
+  }
+
+  @media (max-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 28px;
+    border-top: none;
+
+    &--data {
+      margin-bottom: 7px;
+      gap: 0;
+    }
+
+    &--time {
+      border-top: 1px solid #ffffff;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    &--data {
+      gap: 4px;
+    }
+  }
+}
+
+.competition__description p {
+  font-family: $ff-roboto-condensed;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #ffffff;
+  margin: 17px 0 47px;
+
+  @media (max-width: $tablet-width) {
+    font-size: 12px;
+    line-height: 18px;
+    margin: 5px 0 31px 2px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin: 5px 0 31px 1px;
+  }
+}
+
+.competition__button {
+  min-width: 343px;
+  min-height: 67px;
+  user-select: none;
+  cursor: pointer;
+  font-family: $ff-roboto-condensed;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: 4px solid #ffffff;
+
+  text-decoration: none;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $desktop-min) and (max-width: $desktop-max) {
+    min-width: auto;
+  }
+
+  @media (max-width: $tablet-width) {
+    min-width: 202px;
+    min-height: 39px;
+    border: 2px solid #ffffff;
+    font-size: 10px;
+    line-height: 12px;
+  }
+}
+
+.competition__button:hover {
+  opacity: 0.8;
+}
+
+.competition__button:active {
+  opacity: 0.6;
+}

@@ -1,0 +1,26 @@
+// Vendor
+// ---------------------------------
+
+// @import "vendor/normalize";
+@import "vendor/swiper";
+
+// Global
+@import "variables";
+@import "global/fonts";
+@import "global/reboot";
+
+// Blocks
+@import "blocks/page-header";
+@import "blocks/promo";
+@import "blocks/subscriptions";
+@import "blocks/page-footer";
+@import "blocks/form";
+@import "blocks/coach";
+@import "blocks/main-nav";
+@import "blocks/site-list";
+@import "blocks/gym";
+@import "blocks/competition";
+@import "blocks/benefits";
+@import "blocks/discount";
+@import "blocks/reviews";
+@import "blocks/button-slider";

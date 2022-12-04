@@ -1,0 +1,231 @@
+.gym {
+  position: relative;
+  display: flex;
+  width: 1160px;
+  margin: 0 auto;
+  padding: 120px 0 235px 60px;
+
+  @media (min-width: $desktop-min) and (max-width: $desktop-max) {
+    max-width: 1160px;
+    width: 95%;
+    padding-left: 4.39%;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 88.28%;
+    padding: 52px 0 185px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 68px 0 70px;
+    align-items: flex-start;
+    width: 100%;
+  }
+}
+
+.gym__text-container {
+  width: 355px;
+  margin-right: 85px;
+  padding-top: 38px;
+
+  @media (min-width: $desktop-min) and (max-width: $desktop-max) {
+    margin-right: 7.8%;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 74.05%;
+    text-align: center;
+    margin-right: 0;
+    padding-top: 53px;
+  }
+
+  @media (max-width: $mobile-width) {
+    text-align: start;
+    width: 90.62%;
+    margin: 0 auto;
+    padding-top: 0;
+  }
+}
+
+.gym__text-header h2 {
+  margin: 0 0 8px 0;
+  margin-bottom: 8px;
+  font-family: $ff-alumni-sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 58px;
+  letter-spacing: 0.03em;
+  color: #102654;
+
+  @media (max-width: $tablet-width) {
+    font-size: 42px;
+    line-height: 42px;
+    width: 486px;
+    margin: 0 0 3px 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 8px;
+  }
+}
+
+.gym__text-header p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 27px;
+  margin-bottom: 39px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 33px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 22px;
+  }
+}
+
+.gym__container {
+  @media (max-width: $tablet-width) {
+    margin-bottom: 43px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 93%;
+    margin-bottom: 33px;
+  }
+}
+
+.gym__container p {
+  margin: 0;
+  line-height: 24px;
+  font-weight: 300;
+
+  @media (max-width: $tablet-width) {
+    &:last-child {
+      display: none;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 95%;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+
+.gym__img-container {
+  max-width: 660px;
+
+  @media (max-width: $tablet-width) {
+    max-width: none;
+    width: 100%;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 40px;
+  }
+}
+
+.gym__img-container img {
+  vertical-align: top;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.gym__video-wrapper {
+  position: absolute;
+  top: 408px;
+  left: 437px;
+  width: 364px;
+  min-height: 228px;
+
+  @media (max-width: $tablet-width) {
+    width: 39.23%;
+    top: 68.6%;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  @media (max-width: $mobile-width) {
+    position: static;
+    transform: none;
+    width: 100%;
+    min-height: 0;
+  }
+}
+
+.gym__video-container {
+  position: relative;
+  background: url("../img/video-preview-desktop.jpg") no-repeat;
+  background-color: #495a7d;
+  padding-top: 62.63%;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) and (min-width: $desktop-max) {
+    background-image: url("../img/video-preview-desktop@2x.jpg");
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-top: 62.8%;
+    background-image: url("../img/video-preview-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/video-preview-tablet@2x.jpg");
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 52.18%;
+    background-image: url("../img/video-preview-mobile.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/video-preview-mobile@2x.jpg");
+    }
+  }
+}
+
+.gym__video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.gym__video-button {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: url("../img/svg/play-button.svg") no-repeat center;
+  background-size: cover;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  cursor: pointer;
+
+  @media (max-width: $tablet-width) {
+    width: 73px;
+    height: 73px;
+  }
+
+  &:hover {
+    width: 107px;
+    height: 107px;
+
+    @media (max-width: $tablet-width) {
+      width: 65px;
+      height: 65px;
+    }
+  }
+}

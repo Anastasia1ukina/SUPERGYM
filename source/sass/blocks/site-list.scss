@@ -1,0 +1,40 @@
+.site-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.site-list__link {
+  display: block;
+  text-decoration: none;
+  font-family: $ff-alumni-sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  @media (max-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.02em;
+    padding-top: 4px;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 20px;
+    line-height: 24px;
+    padding-top: 2px;
+  }
+}
