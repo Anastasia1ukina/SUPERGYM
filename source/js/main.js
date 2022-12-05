@@ -3,6 +3,7 @@ import './modules/modals/video';
 // import './modules/modals/slider';
 import './modules/modals/scroll';
 import './modules/modals/subscriptions';
+import './modules/modals/footer-scroll';
 import Inputmask from 'inputmask';
 // ---------------------------------
 
@@ -15,15 +16,16 @@ window.addEventListener('DOMContentLoaded', () => {
     showMaskOnHover: false,
   }).mask(document.querySelectorAll('[type="tel"]'));
 
-  // new Swiper('.reviews__swiper', {
-  //   navigation: {
-  //     prevEl: '.reviews__button-prev',
-  //     nextEl: '.reviews__button-next',
-  //   },
-  //   slidesPerView: 1,
-  //   spaceBetween: 15,
-  //   autoHeight: true,
-  // });
+  new Swiper('.reviews__swiper', {
+    navigation: {
+      prevEl: '.reviews__button-prev',
+      nextEl: '.reviews__button-next',
+    },
+    slidesPerView: 1,
+    spaceBetween: 15,
+    autoHeight: true,
+  });
+
 });
 
 // ---------------------------------
