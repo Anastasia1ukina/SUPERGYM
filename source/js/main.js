@@ -1,6 +1,8 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import './modules/modals/video';
-import './modules/modals/slider';
+// import './modules/modals/slider';
+import './modules/modals/scroll';
+import './modules/modals/subscriptions';
 import Inputmask from 'inputmask';
 // ---------------------------------
 
@@ -12,6 +14,16 @@ window.addEventListener('DOMContentLoaded', () => {
     mask: '+7 (999) 999-99-99',
     showMaskOnHover: false,
   }).mask(document.querySelectorAll('[type="tel"]'));
+
+  // new Swiper('.reviews__swiper', {
+  //   navigation: {
+  //     prevEl: '.reviews__button-prev',
+  //     nextEl: '.reviews__button-next',
+  //   },
+  //   slidesPerView: 1,
+  //   spaceBetween: 15,
+  //   autoHeight: true,
+  // });
 });
 
 // ---------------------------------

@@ -357,3 +357,11 @@
     }
   }
 }
+
+.subscriptions__content-item {
+  display: none;
+
+  &--active {
+    display: block;
+  }
+}

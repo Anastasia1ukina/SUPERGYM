@@ -1115,7 +1115,7 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  background: conic-gradient(from 139.4deg at 20.7% 35.74%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+  background: conic-gradient(from 130.31deg at 16.03% 39.06%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
   min-height: 658px;
 }
 
@@ -1466,6 +1466,14 @@ button,
   height: 2px;
   background-color: #d10a42;
   bottom: -16px;
+}
+
+.subscriptions__content-item {
+  display: none;
+}
+
+.subscriptions__content-item--active {
+  display: block;
 }
 
 .page-footer {
@@ -2158,7 +2166,6 @@ button,
 
 .gym__text-header h2 {
   margin: 0 0 8px 0;
-  margin-bottom: 8px;
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -3173,8 +3180,9 @@ button,
   .gym__text-header h2 {
     font-size: 42px;
     line-height: 42px;
-    width: 486px;
-    margin: 0 0 3px 0;
+    width: 276px;
+    margin: 0 auto 3px;
+    text-align: left;
   }
 
   .gym__text-header p {
@@ -3941,7 +3949,7 @@ button,
   .gym__text-header h2 {
     font-size: 32px;
     line-height: 32px;
-    margin-bottom: 8px;
+    margin: 0 0 8px 0;
   }
 
   .gym__text-header p {
