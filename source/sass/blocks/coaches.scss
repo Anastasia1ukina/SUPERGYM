@@ -1,0 +1,277 @@
+.coaches {
+  padding-bottom: 91px;
+
+  @media (max-width: $tablet-width) {
+    padding-bottom: 100px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-bottom: 70px;
+  }
+}
+
+.coaches__title-wrapper {
+  width: 1157px;
+  margin: 0 auto;
+
+  @media (max-width: $tablet-width) {
+    width: auto;
+  }
+}
+
+.coaches__wrapper {
+  width: 1160px;
+  margin: 0 auto;
+  position: relative;
+
+  @media (min-width: $desktop-min) and (max-width: $desktop-max) {
+    max-width: 1160px;
+    width: 89%;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding: 0 56px;
+    width: 88.28%;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 0 32px;
+    width: 90.62%;
+  }
+}
+
+.coaches h2 {
+  font-family: $ff-alumni-sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 65px;
+  letter-spacing: 0.03em;
+  color: #102654;
+  margin: 0 0 47px 0;
+
+  @media (max-width: $tablet-width) {
+    font-size: 42px;
+    line-height: 50px;
+    text-align: center;
+    margin: 0 7px 32px 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 32px;
+    line-height: 38px;
+    margin: 0 auto 42px;
+    width: 99px;
+    text-align: left;
+  }
+}
+
+.coaches__slide .coaches__info {
+  opacity: 0;
+  background-color: #102654e3;
+  padding: 52px 21px 25px;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  @media (min-width: $desktop-min) and (max-width: $desktop-max) {
+    width: 100%;
+    height: 100%;
+    padding: 40px 15px 25px;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    height: 100%;
+    padding: 52px 20px 25px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    min-height: 274px;
+    height: 100%;
+    padding: 43px 23px 30px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.coaches__slide:hover .coaches__info {
+  opacity: 1;
+  transition: 0.8s;
+}
+
+.coaches__slide:focus-within .coaches__info {
+  opacity: 1;
+}
+
+.coaches__slide:hover .coaches__title {
+  opacity: 0;
+}
+
+.coaches__slide:focus-within .coaches__title {
+  opacity: 0;
+}
+
+.coaches__slide {
+  position: relative;
+  text-align: center;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 51.95%;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 121.23%;
+  }
+}
+
+.coaches__slide img {
+  vertical-align: top;
+  width: 100%;
+
+  @media (max-width: $tablet-width) {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.coaches__slide h3 {
+  position: absolute;
+  bottom: 12px;
+  margin: 0;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  color: $color-default-white;
+  font-size: 18px;
+  line-height: 27px;
+  z-index: 1;
+
+  @media (max-width: $tablet-width) {
+    left: 3px;
+  }
+}
+
+.coaches__slide:hover h3 {
+  display: none;
+}
+
+.coaches__info {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #102654e3;
+  color: #ffffff;
+  text-align: center;
+  padding: 52px 20px 10px;
+  overflow-y: auto;
+
+  @media (max-width: $mobile-width) {
+    padding: 43px 17px 10px 23px;
+  }
+}
+
+.coaches__info h4 {
+  margin: 0;
+  font-size: 18px;
+  line-height: 27px;
+
+  @media (max-width: $tablet-width) {
+    margin-left: -8px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-left: 0;
+  }
+}
+
+.coaches__info p {
+  margin: 0;
+  color: #ffffff;
+  margin-bottom: 39px;
+  line-height: 14px;
+
+  @media (max-width: $tablet-width) {
+    margin-left: -6px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 38px;
+    margin-left: -2px;
+  }
+}
+
+.coaches__list {
+  list-style: none;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  padding-left: 30px;
+
+  @media (max-width: $mobile-width) {
+    padding-left: 7px;
+  }
+}
+
+.coaches__list-item {
+  position: relative;
+  padding-left: 21px;
+  font-size: 14px;
+  line-height: 21px;
+
+  @media (max-width: $mobile-width) {
+    padding-left: 20px;
+  }
+
+  &::before {
+    content: ".";
+    position: absolute;
+    font-size: 50px;
+    line-height: 0;
+    left: 0;
+    top: -4px;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 13px;
+
+    @media (max-width: $mobile-width) {
+      margin-bottom: 13px;
+    }
+  }
+}
+
+.coaches__button-prev {
+  left: -62px;
+
+  @media (max-width: $tablet-width) {
+    left: -7px;
+  }
+
+  @media (max-width: $mobile-width) {
+    left: -9px;
+  }
+}
+
+.coaches__button-next {
+  right: -62px;
+
+  @media (max-width: $tablet-width) {
+    right: -7px;
+  }
+
+  @media (max-width: $mobile-width) {
+    right: -9px;
+  }
+
+  &::after {
+    transform: rotate(180deg);
+  }
+}

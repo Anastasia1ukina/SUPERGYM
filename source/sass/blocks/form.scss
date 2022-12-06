@@ -9,7 +9,7 @@
     width: 100%;
     display: block;
     text-align: center;
-    padding-bottom: 60px;
+    padding-bottom: 61px;
   }
 
   @media (max-width: $mobile-width) {
@@ -38,7 +38,7 @@
     text-align: left;
     font-size: 32px;
     line-height: 38px;
-    margin: 0 0 35px;
+    margin: 0 0 34px 0;
     letter-spacing: 0.03em;
   }
 }
@@ -101,7 +101,7 @@
 }
 
 .form__item--first {
-  margin-bottom: 18px;
+  margin-bottom: 17px;
 }
 
 .form__item h4 {
@@ -124,11 +124,19 @@
   @media (max-width: $tablet-width) {
     margin-bottom: 7px;
   }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 8px;
+  }
 }
 
 .form__item--email h4 {
   @media (max-width: $tablet-width) {
     margin-bottom: 7px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 8px;
   }
 }
 
@@ -171,7 +179,7 @@
   line-height: 65px;
   letter-spacing: 0.03em;
   color: #102654;
-  margin: 0 0 35px 0;
+  margin: 0 0 36px 0;
 
   @media (max-width: $tablet-width) {
     font-size: 42px;

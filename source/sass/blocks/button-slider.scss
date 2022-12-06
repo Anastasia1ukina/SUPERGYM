@@ -10,31 +10,3 @@
     height: 19px;
   }
 }
-
-.button-slider--prev {
-  left: -62px;
-
-  @media (max-width: $tablet-width) {
-    left: -64px;
-  }
-
-  @media (max-width: $mobile-width) {
-    left: -41px;
-  }
-}
-
-.button-slider--next {
-  right: -62px;
-
-  @media (max-width: $tablet-width) {
-    right: -63px;
-  }
-
-  @media (max-width: $mobile-width) {
-    right: -41px;
-  }
-
-  &::after {
-    transform: rotate(180deg);
-  }
-}

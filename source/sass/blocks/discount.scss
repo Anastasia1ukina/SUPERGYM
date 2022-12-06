@@ -11,7 +11,7 @@
 
   @media (max-width: $tablet-width) {
     width: 88.4%;
-    padding-top: 99px;
+    padding-top: 100px;
     padding-bottom: 96px;
   }
 
@@ -126,6 +126,10 @@
   font-size: 70px;
   line-height: 73px;
   color: #ffffff;
+
+  @media (max-width: $mobile-width) {
+    line-height: 78px;
+  }
 }
 
 .discount__description p {
@@ -137,7 +141,7 @@
   color: #ffffff;
 
   @media (max-width: $mobile-width) {
-    margin: 14px 0 0 0;
+    margin: 10px 0 0 0;
   }
 }
 

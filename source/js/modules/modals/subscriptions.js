@@ -1,5 +1,10 @@
 const triggers = document.querySelectorAll('.subscriptions__triggers-item');
 const contentsItems = document.querySelectorAll('.subscriptions__content-item');
+let subscriptionsContent = document.querySelector('.subscriptions__content');
+
+if (document.querySelector('.subscriptions__content--no-js')) {
+  subscriptionsContent.classList.remove('subscriptions__content--no-js');
+}
 
 triggers.forEach((trigger) =>
   trigger.addEventListener('click', (evt) => {

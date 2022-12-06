@@ -1256,6 +1256,7 @@ button,
   margin: 0 auto;
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
+  padding: 0 0 114px 0;
 }
 
 .subscriptions__wrapper h2 {
@@ -1279,7 +1280,7 @@ button,
   gap: 40px;
   -ms-grid-columns: (1fr)[3];
   grid-template-columns: repeat(3, 1fr);
-  padding: 34px 0 114px 0;
+  padding: 34px 0 0 0;
 }
 
 .subscriptions__item {
@@ -1473,6 +1474,10 @@ button,
 }
 
 .subscriptions__content-item--active {
+  display: block;
+}
+
+.subscriptions__content--no-js .subscriptions__content-item {
   display: block;
 }
 
@@ -1697,7 +1702,7 @@ button,
 }
 
 .form__item--first {
-  margin-bottom: 18px;
+  margin-bottom: 17px;
 }
 
 .form__item h4 {
@@ -1737,7 +1742,7 @@ button,
   line-height: 65px;
   letter-spacing: 0.03em;
   color: #102654;
-  margin: 0 0 35px 0;
+  margin: 0 0 36px 0;
 }
 
 .form__description {
@@ -1864,16 +1869,22 @@ button,
   width: 50%;
 }
 
-.coach__wrapper {
-  position: relative;
-  width: 1160px;
-  margin: 0 auto;
-  -webkit-box-sizing: content-box;
-  box-sizing: content-box;
-  padding-bottom: 112px;
+.coaches {
+  padding-bottom: 91px;
 }
 
-.coach__wrapper h2 {
+.coaches__title-wrapper {
+  width: 1157px;
+  margin: 0 auto;
+}
+
+.coaches__wrapper {
+  width: 1160px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.coaches h2 {
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -1884,188 +1895,129 @@ button,
   margin: 0 0 47px 0;
 }
 
-.coach__list {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[4];
-  grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
-}
-
-.coach__card-booking {
-  position: absolute;
-}
-
-.coach__card-wrapper .coach__card-booking {
+.coaches__slide .coaches__info {
   opacity: 0;
   background-color: rgba(16, 38, 84, 0.8901960784);
-  padding: 51px 35px 25px;
-  width: 260px;
-  height: 294px;
+  padding: 52px 21px 25px;
+  width: 100%;
+  height: 100%;
   cursor: pointer;
   overflow-x: hidden;
   overflow-y: auto;
 }
 
-.coach__card-img img {
-  width: 260px;
-}
-
-.coach__card-wrapper:hover .coach__card-booking {
+.coaches__slide:hover .coaches__info {
   opacity: 1;
   -webkit-transition: 0.8s;
   -o-transition: 0.8s;
   transition: 0.8s;
 }
 
-.coach__card-wrapper:focus-within .coach__card-booking {
+.coaches__slide:focus-within .coaches__info {
   opacity: 1;
 }
 
-.coach__card-wrapper:hover .coach__card-title {
+.coaches__slide:hover .coaches__title {
   opacity: 0;
 }
 
-.coach__card-wrapper:focus-within .coach__card-title {
+.coaches__slide:focus-within .coaches__title {
   opacity: 0;
 }
 
-.coach__card-item h4 {
-  display: block;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 20px;
-  color: #f9fbfd;
-  margin: 0;
-}
-
-.coach__card-item p {
-  display: block;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  color: #d8d8d9;
-  margin: 0 0 12px;
-  width: 215px;
-}
-
-.coach__card-item-last h4 {
-  display: block;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 20px;
-  color: #f9fbfd;
-  margin: 0;
-}
-
-.coach__card-item-last p {
-  margin: 0;
-}
-
-.coach__card-item-last {
-  display: block;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  color: #d8d8d9;
-  margin: 0 0 12px;
-  width: 215px;
-}
-
-.coach__card-wrapper {
+.coaches__slide {
   position: relative;
-}
-
-.coach__intro {
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #b6bdcc;
   text-align: center;
-  margin-bottom: 34px;
 }
 
-.coach__card-title {
+.coaches__slide img {
+  vertical-align: top;
+  width: 100%;
+}
+
+.coaches__slide h3 {
   position: absolute;
-  bottom: 23px;
-  left: 77px;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 700;
+  bottom: 12px;
+  margin: 0;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
   font-size: 18px;
   line-height: 27px;
-  color: #ffffff;
-  margin: 0;
+  z-index: 1;
 }
 
-.coach__card-title--two {
-  left: 69px;
+.coaches__slide:hover h3 {
+  display: none;
 }
 
-.coach__card-button {
-  background-color: transparent;
-  width: 260px;
-  height: 294px;
-  display: block;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+.coaches__info {
   position: absolute;
   top: 0;
+  bottom: 0;
   left: 0;
+  right: 0;
+  background-color: rgba(16, 38, 84, 0.8901960784);
+  color: #ffffff;
+  text-align: center;
+  padding: 52px 20px 10px;
+  overflow-y: auto;
 }
 
-.coach__card-button:hover {
-  opacity: 0.8;
-}
-
-.coach__card-button:active {
-  opacity: 0.6;
-}
-
-.coach__card-booking h3 {
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 700;
+.coaches__info h4 {
+  margin: 0;
   font-size: 18px;
   line-height: 27px;
+}
+
+.coaches__info p {
+  margin: 0;
   color: #ffffff;
-  margin: 0 0 -4px;
-  text-align: center;
+  margin-bottom: 39px;
+  line-height: 14px;
 }
 
-.coach__card {
-  background-color: #5e8ec2;
-  width: 260px;
-}
-
-.coach__card-list {
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin: 0 0 0 36px;
+.coaches__list {
+  list-style: none;
+  text-align: left;
   padding: 0;
-  list-style-type: initial;
+  margin: 0;
+  padding-left: 30px;
 }
 
-.coach__card-item {
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
+.coaches__list-item {
+  position: relative;
+  padding-left: 21px;
   font-size: 14px;
   line-height: 21px;
-  color: #ffffff;
+}
+
+.coaches__list-item::before {
+  content: ".";
+  position: absolute;
+  font-size: 50px;
+  line-height: 0;
+  left: 0;
+  top: -4px;
+}
+
+.coaches__list-item:not(:last-child) {
   margin-bottom: 13px;
+}
+
+.coaches__button-prev {
+  left: -62px;
+}
+
+.coaches__button-next {
+  right: -62px;
+}
+
+.coaches__button-next::after {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .main-nav__container {
@@ -2390,7 +2342,6 @@ button,
 
 .benefits {
   background: #f8f9fc;
-  margin-top: -21px;
 }
 
 .benefits__wrapper {
@@ -2768,6 +2719,7 @@ button,
   position: relative;
   -webkit-box-shadow: 0 0 40px rgba(28, 51, 116, 0.2);
   box-shadow: 0 0 40px rgba(28, 51, 116, 0.2);
+  background-color: #1c3374;
 }
 
 .reviews__swiper {
@@ -2797,8 +2749,8 @@ button,
   font-size: 20px;
   line-height: 14px;
   font-weight: 700;
-  font-style: normal;
   margin-bottom: 21px;
+  font-style: normal;
   display: block;
 }
 
@@ -2807,26 +2759,26 @@ button,
   line-height: 22px;
 }
 
+.reviews__button-prev {
+  left: -63px;
+}
+
+.reviews__button-next {
+  right: -63px;
+}
+
+.reviews__button-next::after {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
 .button-slider::after {
   content: "";
   width: 16px;
   height: 32px;
   background-image: url("../img/svg/arrow-slider.svg");
   background-size: cover;
-}
-
-.button-slider--prev {
-  left: -62px;
-}
-
-.button-slider--next {
-  right: -62px;
-}
-
-.button-slider--next::after {
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 1365px), (-o-min-device-pixel-ratio: 3/2) and (min-width: 1365px), (min-resolution: 1.5dppx) and (min-width: 1365px) {
@@ -2846,6 +2798,7 @@ button,
 @media (max-width: 1199px) {
   .page-header {
     min-height: 554px;
+    background: conic-gradient(from 139.4deg at 20.7% 35.74%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
   }
 
   .promo__item {
@@ -2901,6 +2854,7 @@ button,
 
   .subscriptions__wrapper {
     width: 88.5%;
+    padding: 0 0 99px 0;
   }
 
   .subscriptions__wrapper h2 {
@@ -2911,7 +2865,7 @@ button,
 
   .subscriptions__list {
     display: block;
-    padding: 0 118px 99px;
+    padding: 0 118px 0;
   }
 
   .subscriptions__item {
@@ -2933,6 +2887,10 @@ button,
 
   .subscriptions__triggers-item:not(:last-child) {
     margin-right: 21px;
+  }
+
+  .subscriptions__triggers-item--active .subscriptions__triggers-item-content::before {
+    bottom: -18px;
   }
 
   .page-footer__wrapper {
@@ -2995,7 +2953,7 @@ button,
     width: 100%;
     display: block;
     text-align: center;
-    padding-bottom: 60px;
+    padding-bottom: 61px;
   }
 
   .form__auth h2 {
@@ -3087,58 +3045,61 @@ button,
     width: 100%;
   }
 
-  .coach__wrapper {
-    width: 564px;
-    padding-bottom: 82px;
+  .coaches {
+    padding-bottom: 100px;
   }
 
-  .coach__wrapper h2 {
+  .coaches__title-wrapper {
+    width: auto;
+  }
+
+  .coaches__wrapper {
+    padding: 0 56px;
+    width: 88.28%;
+  }
+
+  .coaches h2 {
     font-size: 42px;
     line-height: 50px;
     text-align: center;
     margin: 0 7px 32px 0;
   }
 
-  .coach__list {
-    -ms-grid-columns: (1fr)[2];
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+  .coaches__slide .coaches__info {
+    width: 100%;
+    height: 100%;
+    padding: 52px 20px 25px;
   }
 
-  .coach__card-wrapper .coach__card-booking {
-    width: 268px;
-    height: 294px;
-    padding: 52px 45px 25px 34px;
+  .coaches__slide {
+    padding-top: 51.95%;
   }
 
-  .coach__card-img img {
-    width: 268px;
+  .coaches__slide img {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 
-  .coach__intro {
-    margin-bottom: 33px;
+  .coaches__slide h3 {
+    left: 3px;
   }
 
-  .coach__card-title {
-    bottom: 22px;
-    left: 84px;
+  .coaches__info h4 {
+    margin-left: -8px;
   }
 
-  .coach__card-title--two {
-    left: 59px;
+  .coaches__info p {
+    margin-left: -6px;
   }
 
-  .coach__card-button {
-    width: 268px;
+  .coaches__button-prev {
+    left: -7px;
   }
 
-  .coach__card {
-    width: 268px;
-    height: 294px;
-  }
-
-  .coach__card--hidden {
-    display: none;
+  .coaches__button-next {
+    right: -7px;
   }
 
   .main-nav__container {
@@ -3304,10 +3265,6 @@ button,
     line-height: 12px;
   }
 
-  .benefits {
-    margin-top: 18px;
-  }
-
   .benefits__wrapper {
     width: 88.5%;
     padding: 92px 0 87px;
@@ -3389,14 +3346,14 @@ button,
 
   .benefits__gym-title {
     font-size: 22px;
-    line-height: 32px;
-    margin: 0 0 16px 2px;
+    line-height: 28px;
+    margin: 0 0 20px 2px;
   }
 
   .benefits__title {
     font-size: 20px;
     line-height: 30px;
-    margin: 0 0 2px 0;
+    margin: 0 0 1px 0;
   }
 
   .benefits__item-text-container--simulators p {
@@ -3406,7 +3363,7 @@ button,
 
   .discount__wrapper {
     width: 88.4%;
-    padding-top: 99px;
+    padding-top: 100px;
     padding-bottom: 96px;
   }
 
@@ -3473,8 +3430,7 @@ button,
   }
 
   .reviews__item {
-    padding-left: 64px;
-    padding-right: 63px;
+    padding: 61px 63px 10px 64px;
   }
 
   .reviews__button-prev {
@@ -3482,14 +3438,6 @@ button,
   }
 
   .reviews__button-next {
-    right: -63px;
-  }
-
-  .button-slider--prev {
-    left: -64px;
-  }
-
-  .button-slider--next {
     right: -63px;
   }
 }
@@ -3590,7 +3538,7 @@ button,
 
   .subscriptions__wrapper {
     width: 91%;
-    padding-top: 57px;
+    padding: 57px 0 63px 0;
   }
 
   .subscriptions__wrapper h2 {
@@ -3602,7 +3550,7 @@ button,
   }
 
   .subscriptions__list {
-    padding: 30px 0 63px 0;
+    padding: 30px 0 0 0;
   }
 
   .subscriptions__item {
@@ -3786,7 +3734,7 @@ button,
     text-align: left;
     font-size: 32px;
     line-height: 38px;
-    margin: 0 0 35px;
+    margin: 0 0 34px 0;
     letter-spacing: 0.03em;
   }
 
@@ -3807,6 +3755,14 @@ button,
 
   .form__list {
     margin: 18px 0 0 0;
+  }
+
+  .form__item--first h4 {
+    margin-bottom: 8px;
+  }
+
+  .form__item--email h4 {
+    margin-bottom: 8px;
   }
 
   .form__description h2 {
@@ -3850,12 +3806,16 @@ button,
     margin: 34px 0 50px 0;
   }
 
-  .coach__wrapper {
-    width: 71%;
-    padding-bottom: 20px;
+  .coaches {
+    padding-bottom: 70px;
   }
 
-  .coach__wrapper h2 {
+  .coaches__wrapper {
+    padding: 0 32px;
+    width: 90.62%;
+  }
+
+  .coaches h2 {
     font-size: 32px;
     line-height: 38px;
     margin: 0 auto 42px;
@@ -3863,15 +3823,11 @@ button,
     text-align: left;
   }
 
-  .coach__list {
-    display: block;
-  }
-
-  .coach__card-wrapper .coach__card-booking {
+  .coaches__slide .coaches__info {
     width: 100%;
     min-height: 274px;
     height: 100%;
-    padding: 42px 14px 30px;
+    padding: 43px 23px 30px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3881,37 +3837,41 @@ button,
     flex-direction: column;
   }
 
-  .coach__card-img img {
-    width: 100%;
-    min-height: 274px;
-    height: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
+  .coaches__slide {
+    padding-top: 121.23%;
   }
 
-  .coach__card-title {
-    bottom: 17px;
-    left: 25px;
+  .coaches__info {
+    padding: 43px 17px 10px 23px;
   }
 
-  .coach__card-button {
-    width: 100%;
-    height: 100%;
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 auto;
-    flex: 0 0 auto;
-    margin-top: auto;
+  .coaches__info h4 {
+    margin-left: 0;
   }
 
-  .coach__card {
-    width: 100%;
-    min-height: 274px;
-    height: 100%;
-    margin-bottom: 30px;
+  .coaches__info p {
+    margin-bottom: 38px;
+    margin-left: -2px;
   }
 
-  .coach__card--mobile {
-    display: none;
+  .coaches__list {
+    padding-left: 7px;
+  }
+
+  .coaches__list-item {
+    padding-left: 20px;
+  }
+
+  .coaches__list-item:not(:last-child) {
+    margin-bottom: 13px;
+  }
+
+  .coaches__button-prev {
+    left: -9px;
+  }
+
+  .coaches__button-next {
+    right: -9px;
   }
 
   .main-nav__container {
@@ -3987,7 +3947,7 @@ button,
     display: block;
     width: 91%;
     padding-top: 2px;
-    padding-bottom: 64px;
+    padding-bottom: 63px;
   }
 
   .competition__description {
@@ -4018,7 +3978,7 @@ button,
   }
 
   .competition__description p {
-    margin: 5px 0 31px 1px;
+    margin: 6px 0 31px 1px;
   }
 
   .benefits__wrapper {
@@ -4047,7 +4007,7 @@ button,
 
   .benefits__item--simulators {
     width: 100%;
-    padding: 26px 42px 10px 45px;
+    padding: 29px 42px 10px 45px;
     margin-bottom: 48px;
   }
 
@@ -4080,6 +4040,10 @@ button,
   .benefits__gym-title {
     width: 114px;
     margin: 0 auto 11px;
+  }
+
+  .benefits__title {
+    margin: 0 0 2px 0;
   }
 
   .benefits__simulators-big-text {
@@ -4127,8 +4091,12 @@ button,
     min-height: 299px;
   }
 
+  .discount__big-text {
+    line-height: 78px;
+  }
+
   .discount__description p {
-    margin: 14px 0 0 0;
+    margin: 10px 0 0 0;
   }
 
   .discount__list {
@@ -4149,7 +4117,7 @@ button,
   .reviews {
     margin-bottom: 0;
     width: 70.62%;
-    padding: 0 0 37px 0;
+    padding: 0 0 39px 0;
   }
 
   .reviews h2 {
@@ -4158,6 +4126,10 @@ button,
     margin: 0 auto 46px auto;
     width: 92px;
     text-align: left;
+  }
+
+  .reviews__wrapper {
+    min-height: auto;
   }
 
   .reviews__item {
@@ -4180,6 +4152,7 @@ button,
   .reviews__author-name {
     line-height: 27px;
     padding-top: 8px;
+    margin-bottom: 19px;
   }
 
   .reviews__author-contain p {
@@ -4198,14 +4171,6 @@ button,
   .button-slider::after {
     width: 10px;
     height: 19px;
-  }
-
-  .button-slider--prev {
-    left: -41px;
-  }
-
-  .button-slider--next {
-    right: -41px;
   }
 }
 
@@ -4249,36 +4214,15 @@ button,
     width: 100%;
   }
 
-  .coach__wrapper {
+  .coaches__wrapper {
     max-width: 1160px;
-    width: 95%;
+    width: 89%;
   }
 
-  .coach__list {
-    gap: 0;
-    row-gap: 25px;
-  }
-
-  .coach__card-wrapper .coach__card-booking {
-    width: 95%;
-    height: 100%;
-  }
-
-  .coach__card-img img {
-    width: 95%;
-  }
-
-  .coach__card-title {
-    left: 15px;
-  }
-
-  .coach__card-button {
+  .coaches__slide .coaches__info {
     width: 100%;
-  }
-
-  .coach__card {
-    width: 95%;
-    display: contents;
+    height: 100%;
+    padding: 40px 15px 25px;
   }
 
   .main-nav__container {

@@ -1,6 +1,5 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import './modules/modals/video';
-// import './modules/modals/slider';
 import './modules/modals/scroll';
 import './modules/modals/subscriptions';
 import './modules/modals/footer-scroll';
@@ -15,6 +14,28 @@ window.addEventListener('DOMContentLoaded', () => {
     mask: '+7 (999) 999-99-99',
     showMaskOnHover: false,
   }).mask(document.querySelectorAll('[type="tel"]'));
+
+  new Swiper('.coaches__swiper', {
+    navigation: {
+      prevEl: '.coaches__button-prev',
+      nextEl: '.coaches__button-next',
+    },
+    slidesPerView: 1,
+    spaceBetween: 15,
+    initialSlide: 2,
+    loop: true,
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+      1200: {
+        initialSlide: 0,
+        slidesPerView: 4,
+        spaceBetween: 40,
+      },
+    },
+  });
 
   new Swiper('.reviews__swiper', {
     navigation: {
