@@ -1638,11 +1638,11 @@ button,
   row-gap: 12px;
 }
 
-.page-footer__social-link img:hover {
+.page-footer__social-link svg:hover {
   opacity: 0.8;
 }
 
-.page-footer__social-link img:active {
+.page-footer__social-link svg:active {
   opacity: 0.6;
 }
 
@@ -2905,7 +2905,7 @@ button,
     -moz-column-gap: 30px;
     column-gap: 30px;
     max-width: 391px;
-    margin: 3px 0 0 9px;
+    margin: -2px 0 0 9px;
   }
 
   .page-footer__contacts-wrapper {
@@ -3607,15 +3607,12 @@ button,
     padding: 17px 0;
   }
 
-  .subscriptions__triggers-item--half-year {
-    padding-right: 2px;
-  }
-
-  .subscriptions__triggers-item:nth-child(3n+1) {
+  .subscriptions__triggers-item--month {
     text-align: left;
   }
 
-  .subscriptions__triggers-item:nth-child(3n) {
+  .subscriptions__triggers-item--half-year {
+    padding-right: 2px;
     text-align: right;
   }
 

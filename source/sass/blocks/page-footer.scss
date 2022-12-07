@@ -54,7 +54,7 @@
   @media (max-width: $tablet-width) {
     column-gap: 30px;
     max-width: 391px;
-    margin: 3px 0 0 9px;
+    margin: -2px 0 0 9px;
   }
 
   @media (max-width: $mobile-width) {
@@ -281,11 +281,11 @@
   }
 }
 
-.page-footer__social-link img:hover {
+.page-footer__social-link svg:hover {
   opacity: 0.8;
 }
 
-.page-footer__social-link img:active {
+.page-footer__social-link svg:active {
   opacity: 0.6;
 }
 

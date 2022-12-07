@@ -299,15 +299,12 @@
     text-align: center;
     padding: 17px 0;
 
-    &--half-year {
-      padding-right: 2px;
-    }
-
-    &:nth-child(3n+1) {
+    &--month {
       text-align: left;
     }
 
-    &:nth-child(3n) {
+    &--half-year {
+      padding-right: 2px;
       text-align: right;
     }
   }

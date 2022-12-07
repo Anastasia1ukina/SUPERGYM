@@ -121,9 +121,10 @@
         <div class="subscriptions__wrapper">
           <h2>Абонементы</h2>
           <div class="subscriptions__triggers">
-            <a href="#subscriptions-1" class="subscriptions__triggers-item subscriptions__triggers-item--active"><span
+            <a href="#subscriptions-1"
+              class="subscriptions__triggers-item subscriptions__triggers-item--month subscriptions__triggers-item--active"><span
                 class="subscriptions__triggers-item-content">1 месяц</span></a>
-            <a href="#subscriptions-2" class="subscriptions__triggers-item"><span
+            <a href="#subscriptions-2" class="subscriptions__triggers-item subscriptions__triggers-item"><span
                 class="subscriptions__triggers-item-content">6
                 месяцев</span></a>
             <a href="#subscriptions-3"
@@ -544,7 +545,7 @@
                     </picture>
                   </div>
                   <div class="reviews__author-contain">
-                    <cite class="reviews__author-name">Князева Марьям</cite>
+                    <cite class="reviews__author-name">Евгения Камышева</cite>
                     <p>&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры
                       обновляют,
                       персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
@@ -567,7 +568,7 @@
                     </picture>
                   </div>
                   <div class="reviews__author-contain">
-                    <cite class="reviews__author-name">Кузина Дарья</cite>
+                    <cite class="reviews__author-name">Алиса Виноградова</cite>
                     <p>&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры
                       обновляют,
                       персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
@@ -589,14 +590,13 @@
                 <div class="form__echo">
                   <p class="form__field-group">
                     <label class="visually-hidden" for="appointment-name">Ваше имя</label>
-                    <input class="form__field" type="text" id="appointment-name" name="appointment-name"
-                      placeholder="Имя">
+                    <input type="text" id="appointment-name" name="appointment-name" placeholder="Имя">
                   </p>
                   <p class="form__field-group">
                     <label class="visually-hidden" for="modal-phone">Ваш телефон</label>
-                    <input class="form__field" type="tel" id="modal-phone" name="modal-phone" placeholder="Телефон"
-                      minlength="20" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$"
-                      title="Используйте числовой формат" required="">
+                    <input type="tel" id="modal-phone" name="modal-phone" placeholder="Телефон" minlength="20"
+                      pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" title="Используйте числовой формат"
+                      required="">
                   </p>
                 </div>
                 <button class="form__button" type="submit">Отправить</button>
@@ -668,17 +668,23 @@
             <ul>
               <li class="page-footer__social-item">
                 <a class="page-footer__social-link page-footer__social-link--ok" href="#">
-                  <img src="img/svg/vk.svg" width="25" height="25" alt="Вконтакте">
+                  <svg role="img" aria-hidden="true" focusable="false" width="25" height="25">
+                    <use href="img/sprite.svg#vk"></use>
+                  </svg>
                 </a>
               </li>
               <li class="page-footer__social-item">
                 <a class="page-footer__social-link page-footer__social-link--dzen" href="#">
-                  <img src="img/svg/ok.svg" width="25" height="25" alt="Одноклассники">
+                  <svg role="img" aria-hidden="true" focusable="false" width="25" height="25">
+                    <use href="img/sprite.svg#ok"></use>
+                  </svg>
                 </a>
               </li>
               <li class="page-footer__social-item">
                 <a class="page-footer__social-link page-footer__social-link--reddit" href="#">
-                  <img src="img/svg/reddit.svg" width="25" height="25" alt="Reddit">
+                  <svg role="img" aria-hidden="true" focusable="false" width="25" height="25">
+                    <use href="img/sprite.svg#reddit"></use>
+                  </svg>
                 </a>
               </li>
             </ul>
