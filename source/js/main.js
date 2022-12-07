@@ -4,6 +4,7 @@ import './modules/modals/scroll';
 import './modules/modals/subscriptions';
 import './modules/modals/footer-scroll';
 import Inputmask from 'inputmask';
+import Swiper from 'swiper/swiper-bundle';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -15,37 +16,41 @@ window.addEventListener('DOMContentLoaded', () => {
     showMaskOnHover: false,
   }).mask(document.querySelectorAll('[type="tel"]'));
 
-  new Swiper('.coaches__swiper', {
-    navigation: {
-      prevEl: '.coaches__button-prev',
-      nextEl: '.coaches__button-next',
-    },
-    slidesPerView: 1,
-    spaceBetween: 15,
-    initialSlide: 2,
-    loop: true,
-    breakpoints: {
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 30,
+  (() =>
+    new Swiper('.coaches__swiper', {
+      navigation: {
+        prevEl: '.coaches__button-prev',
+        nextEl: '.coaches__button-next',
       },
-      1200: {
-        initialSlide: 0,
-        slidesPerView: 4,
-        spaceBetween: 40,
+      slidesPerView: 1,
+      spaceBetween: 15,
+      initialSlide: 2,
+      loop: true,
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+        1200: {
+          initialSlide: 0,
+          slidesPerView: 4,
+          spaceBetween: 40,
+        },
       },
-    },
-  });
+    })
+  )();
 
-  new Swiper('.reviews__swiper', {
-    navigation: {
-      prevEl: '.reviews__button-prev',
-      nextEl: '.reviews__button-next',
-    },
-    slidesPerView: 1,
-    spaceBetween: 15,
-    autoHeight: true,
-  });
+  (() =>
+    new Swiper('.reviews__swiper', {
+      navigation: {
+        prevEl: '.reviews__button-prev',
+        nextEl: '.reviews__button-next',
+      },
+      slidesPerView: 1,
+      spaceBetween: 15,
+      autoHeight: true,
+    })
+  )();
 
 });
 
