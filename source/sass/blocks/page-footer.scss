@@ -19,13 +19,15 @@
   }
 
   @media (max-width: $tablet-width) {
-    width: 88.5%;
+    width: 89.5%;
     padding-top: 40px;
     padding-bottom: 44px;
+    margin: 0 39px 0 auto;
   }
 
   @media (max-width: $mobile-width) {
     width: 90%;
+    margin: 0 auto;
     padding-top: 46px;
     padding-bottom: 52px;
     position: relative;
@@ -52,7 +54,7 @@
   @media (max-width: $tablet-width) {
     column-gap: 30px;
     max-width: 391px;
-    margin: 3px 0 0 15px;
+    margin: 3px 0 0 9px;
   }
 
   @media (max-width: $mobile-width) {
@@ -92,6 +94,7 @@
   @media (max-width: $tablet-width) {
     width: 82px;
     margin-top: 0;
+    margin-left: 3px;
   }
 
   @media (max-width: $mobile-width) {
