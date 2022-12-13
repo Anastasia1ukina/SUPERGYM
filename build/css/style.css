@@ -262,7 +262,7 @@
 .swiper-button-prev,
 .swiper-button-next {
   position: absolute;
-  top: 50%;
+  top: 120px;
   width: calc(var(--swiper-navigation-size) / 44 * 27);
   height: var(--swiper-navigation-size);
   margin-top: calc(0px - var(--swiper-navigation-size) / 2);
@@ -1536,9 +1536,7 @@ button,
 
 .page-footer__logo-text {
   cursor: pointer;
-  -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
+  padding-top: 9px;
 }
 
 .page-footer__logo:hover {
@@ -2008,10 +2006,12 @@ button,
 
 .coaches__button-prev {
   left: -62px;
+  top: 147px;
 }
 
 .coaches__button-next {
   right: -62px;
+  top: 147px;
 }
 
 .coaches__button-next::after {
@@ -2044,28 +2044,7 @@ button,
   display: inline-block;
   width: 122px;
   height: 44px;
-  cursor: pointer;
   vertical-align: baseline;
-}
-
-.main-nav__logo img:hover {
-  opacity: 0.8;
-}
-
-.main-nav__logo img:active {
-  opacity: 0.6;
-}
-
-.main-nav__logo-modal {
-  cursor: pointer;
-}
-
-.main-nav__logo-modal img:hover {
-  opacity: 0.8;
-}
-
-.main-nav__logo-modal img:active {
-  opacity: 0.6;
 }
 
 .site-list {
@@ -2549,7 +2528,7 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  min-height: 462px;
+  height: 462px;
 }
 
 .discount__image {
@@ -2683,7 +2662,7 @@ button,
   border-image: linear-gradient(170deg, #d10a42 17.6%, #00359f 95.31%) 1;
   padding: 25px 28px 29px;
   min-height: 211px;
-  min-width: 560px;
+  width: 560px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3134,7 +3113,7 @@ button,
   }
 
   .gym__text-container {
-    width: 74.05%;
+    width: 76.05%;
     text-align: center;
     margin-right: 0;
     padding-top: 53px;
@@ -3381,6 +3360,7 @@ button,
 
   .discount__description {
     width: 61%;
+    height: auto;
   }
 
   .discount__image img {
@@ -3404,9 +3384,10 @@ button,
   }
 
   .discount__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 30px;
     margin-top: 30px;
   }
@@ -3459,6 +3440,11 @@ button,
 }
 
 @media (max-width: 767px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    top: 50%;
+  }
+
   .page-header {
     background: conic-gradient(from 171.43deg at 35.31% 34.22%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
     min-height: 491px;
@@ -3658,6 +3644,7 @@ button,
 
   .page-footer__logo-text {
     margin: 0;
+    padding-top: 0;
     position: absolute;
     top: 53px;
     left: -2px;
@@ -4193,11 +4180,10 @@ button,
 
   .subscriptions__list {
     gap: 0;
+    row-gap: 20px;
   }
 
   .subscriptions__item {
-    padding: 30px 20px 20px 20px;
-    width: 95%;
     height: auto;
   }
 

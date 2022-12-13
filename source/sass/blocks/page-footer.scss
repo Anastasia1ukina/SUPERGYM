@@ -89,7 +89,7 @@
 
 .page-footer__logo-text {
   cursor: pointer;
-  align-self: center;
+  padding-top: 9px;
 
   @media (max-width: $tablet-width) {
     width: 82px;
@@ -99,6 +99,7 @@
 
   @media (max-width: $mobile-width) {
     margin: 0;
+    padding-top: 0;
     position: absolute;
     top: 53px;
     left: -2px;
