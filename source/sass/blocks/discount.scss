@@ -2,7 +2,7 @@
   width: 1160px;
   margin: 0 auto;
   padding-top: 150px;
-  padding-bottom: 117px;
+  padding-bottom: 77px;
 
   @media (min-width: $desktop-min) and (max-width: $desktop-max) {
     max-width: 1160px;
@@ -258,18 +258,12 @@
 
   display: flex;
   flex-direction: column;
-
-  &--first {
-    margin-bottom: 40px;
-
-    @media (max-width: $tablet-width) {
-      margin-bottom: 0;
-    }
-  }
+  margin-bottom: 40px;
 
   @media (max-width: $tablet-width) {
     min-width: 324px;
     width: 100%;
+    margin-bottom: 0;
   }
 
   @media (max-width: $mobile-width) {

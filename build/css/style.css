@@ -2485,7 +2485,7 @@ button,
   width: 1160px;
   margin: 0 auto;
   padding-top: 150px;
-  padding-bottom: 117px;
+  padding-bottom: 77px;
 }
 
 .discount__wrapper h2 {
@@ -2670,9 +2670,6 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-}
-
-.discount__item--first {
   margin-bottom: 40px;
 }
 
@@ -3392,13 +3389,10 @@ button,
     margin-top: 30px;
   }
 
-  .discount__item--first {
-    margin-bottom: 0;
-  }
-
   .discount__item {
     min-width: 324px;
     width: 100%;
+    margin-bottom: 0;
   }
 
   .reviews {
